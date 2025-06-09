@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BetMax - Apuestas en Línea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-header shadow-sm fixed-top">
+  <div class="container d-flex justify-content-between align-items-center py-2">
+    <!-- Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <img src="logo.png" alt="BetMax" height="30" class="logo"/>
+      <strong class="strong">BetMax</strong>
+    </div>
+
+    <!-- Menú -->
+    <!-- From Uiverse.io by Lakshay-art --> 
+<div class=""></div>
+<div id="poda">
+  <div class="glow"></div>
+  <div class="darkBorderBg"></div>
+  <div class="darkBorderBg"></div>
+  <div class="darkBorderBg"></div>
+
+  <div class="white"></div>
+
+  <div class="border"></div>
+
+  <div id="main">
+    <input placeholder="Buscar.." type="text" name="text" class="input" />
+    <div id="input-mask"></div>
+    <div id="pink-mask"></div>
+    <div class="filterBorder"></div>
+    <div id="filter-icon">
+      <svg
+        preserveAspectRatio="none"
+        height="27"
+        width="27"
+        viewBox="4.8 4.56 14.832 15.408"
+        fill="none"
+      >
+        <path
+          d="M8.16 6.65002H15.83C16.47 6.65002 16.99 7.17002 16.99 7.81002V9.09002C16.99 9.56002 16.7 10.14 16.41 10.43L13.91 12.64C13.56 12.93 13.33 13.51 13.33 13.98V16.48C13.33 16.83 13.1 17.29 12.81 17.47L12 17.98C11.24 18.45 10.2 17.92 10.2 16.99V13.91C10.2 13.5 9.97 12.98 9.73 12.69L7.52 10.36C7.23 10.08 7 9.55002 7 9.20002V7.87002C7 7.17002 7.52 6.65002 8.16 6.65002Z"
+          stroke="#d6d6e6"
+          stroke-width="1"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </div>
+    <div id="search-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        height="24"
+        fill="none"
+        class="feather feather-search"
+      >
+        <circle stroke="url(#search)" r="8" cy="11" cx="11"></circle>
+        <line
+          stroke="url(#searchl)"
+          y2="16.65"
+          y1="22"
+          x2="16.65"
+          x1="22"
+        ></line>
+        <defs>
+          <linearGradient gradientTransform="rotate(50)" id="search">
+            <stop stop-color="#f8e7f8" offset="0%"></stop>
+            <stop stop-color="#b6a9b7" offset="50%"></stop>
+          </linearGradient>
+          <linearGradient id="searchl">
+            <stop stop-color="#b6a9b7" offset="0%"></stop>
+            <stop stop-color="#837484" offset="50%"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>
+
+    <!-- Usuario -->
+    <div class="dropdown">
+      <button class="pay-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <span class="btn-text">
+          <span class="badge bg-danger">Dix</span> $ 430
+        </span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end  shadow\\">
+        <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> Mi perfil</a></li>
+        <li><a class="dropdown-item" href="#"><i class="fas fa-coins"></i> Recargar</a></li>
+        <li><a class="dropdown-item" href="#"><i class="fas fa-wallet"></i> Retirar</a></li>
+        <li><a class="dropdown-item" href="#"><i class="fas fa-history"></i> Historial de saldo</a></li>
+        <li><a class="dropdown-item" href="#"><i class="fas fa-bell"></i> Notificaciones</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li class="px-3 d-flex justify-content-between align-items-center">
+          <span><i class="fas fa-volume-up"></i> Sonido</span>
+          <div class="form-check form-switch m-0">
+            <input class="form-check-input" type="checkbox" role="switch" id="soundSwitch" checked>
+          </div>
+        </li>
+        <li><a class="dropdown-item text-danger" href="#"><i class="fas fa-power-off"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+   
+    <!-- Recargar -->
+    <!-- From Uiverse.io by fthisilak --> 
+     <div class="dropdown">
+<button class="pay-btn" data-bs-toggle="modal" data-bs-target="#recargaModal">
+  <span class="btn-text">Recargar</span>
+  <div class="icon-container">
+    <svg viewBox="0 0 24 24" class="icon card-icon">
+      <path
+        d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+        fill="currentColor"
+      ></path>
+    </svg>
+    <svg viewBox="0 0 24 24" class="icon payment-icon">
+      <path
+        d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+        fill="currentColor"
+      ></path>
+    </svg>
+    <svg viewBox="0 0 24 24" class="icon dollar-icon">
+      <path
+        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+      <path
+        d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg viewBox="0 0 24 24" class="icon check-icon">
+      <path
+        d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+  </div>
+</button>
+  </div>
+
+</header>
+ <!-- Modal de Recarga -->
+<div class="modal fade" id="recargaModal" tabindex="-1" aria-labelledby="recargaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header bg-dark text-white rounded-top-4">
+        <h5 class="modal-title" id="recargaModalLabel">Recargar Saldo</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <label for="montoRecarga" class="form-label">Ingresa el monto a recargar:</label>
+        <input type="number" class="form-control" id="montoRecarga" placeholder="$0.00">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success" onclick="recargarSaldo()">Recargar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carrusel -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="blackjack.png" class="d-block w-100" alt="Promo 1" style="height: 500px;">
+      <div class="carousel-caption">
+        <h5 class="colorneon">BlackJack</h5>
+        <p>El mejor juego de cartas</p>
+        <a href="#" class="btn btn-danger"></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="ruleta.png" class="d-block w-100" alt="Promo 2" style="height: 500px;" >
+      <div class="carousel-caption">
+        <h5 class="colorneon">Ruleta</h5>
+        <p>Juega en vivo y gana grandes premios</p>
+      </div>
+      </div>
+    <div class="carousel-item">
+      <img src="betmax.png" class="d-block w-100" alt="promo 2" style="height: 500px;">
+      <div class="carousel-caption">
+        <h5 class="colorneon">Betmax</h5>
+        <p>Betmax la mejor casa de apuestas Online Invita a tus amigos y gana grandes premios</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Galeria de juegos -->
+<div class="container mt-4">
+  <h3 class="casino">Apuestas Online</h3>
+  
+  <div class="row g-4">
+    <!-- Juego 1 -->
+    <div class="col-md-3 game-card">
+      <div class="game-card-container">
+        <img src="blackjack1.png" class="imagenjuego" alt="Juego1">
+        <div class="info-card">
+          <h5 class="colorneon">BlackJack</h5>
+          <p class="colorp1">Juega contra el crupier el q saque 21 o se acerque mas a este numero gana</p>
+          <p class="colorp1">apuesta minima :1$ <br> apuesta maxima :1000$</p>
+          <a href="#" class="btn-jugar">Jugar</a>
+        </div>
+      </div>
+      <div class="info-fija">
+        <p class="colorp">Apuesta mínima: 1$ <br> Apuesta máxima: 1000$</p>
+      </div>
+    </div>
+
+    <!-- Juego 2 -->
+    <div class="col-md-3">
+      <div class="game-card-container">
+        <img src="ruleta1.png" class="imagenjuego" alt="Juego2">
+        <div class="info-card">
+          <h5 class="colorneon">Ruleta</h5>
+          <p class="colorp1">Tiene 32 numeros al q apostar si la pelotita para en el numero q apostaste se multiplica tu dinero</p>
+          <p class="colorp1"> apuesta minima:1$ <br> apuesta maxima:500$</p>
+          <a href="#" class="btn-jugar">Jugar</a>
+        </div>
+      </div>
+      <div class="info-fija">
+        <p class="colorp">Apuesta minima: 1$ <br> Apuesta maxima: 500$</p>
+      </div>
+    </div>
+
+    <!-- Juego 3 -->
+    <div class="col-md-3">
+      <div class="game-card-container">
+        <img src="dados1.png" class="imagenjuego" alt="Juego3">
+        <div class="info-card">
+          <h5 class="colorneon">Dados</h5>
+          <p class="colorp1">Elige tu bando azul o rojo el dado q saque mayor numero gana</p>
+          <p class="colorp1"> apuesta minima: 1$ <br> apuesta maxima : 1000$</p>
+          <a href="#" class="btn-jugar">Jugar</a>
+        </div>
+      </div>
+      <div class="info-fija">
+        <p class="colorp">Apuesta minima: 1$ <br> Apuesta maxima: 1000$</p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
